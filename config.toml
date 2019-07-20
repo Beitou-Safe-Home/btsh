@@ -1,5 +1,5 @@
-baseurl = "https://www.btsh.org.tw"
-title = "北投社區安全家庭互助協會"
+baseurl = "https://www.btsh.org.tw/"
+title = "北投社區安全家庭互助協會 Beitou Safe Home Association"
 #author = ""
 languagecode = "zh-Hant-TW"
 paginate = 3
@@ -7,18 +7,24 @@ theme = "hugo-renga"
 
 enableEmoji = false
 hasCJKLanguage = true
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
 
 googleAnalytics = "UA-105725051-1"
-# disqusShortname = ""
+# disqusShortname = "your-disqus-shortname"
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
 pagetitle = "北投安家"
-copyright = "台北市北投社區安全家庭互助協會"
-copyrightUrl = "/contace/"
-faviconfile = "image/favicon.png"
-logofile = "image/btsh-logo.svg"
+copyright = "北投社區安全家庭互助協會"
+copyrightUrl = "/contact/"
+faviconfile = "img/favicon.png"
+logofile = "img/btsh-logo.svg"
+posterfile = ""
 posts_navigation = true
 uselatex = false
 highlightjs = false

@@ -1,0 +1,15 @@
+<div class="text-center">
+	<div class="figure">
+		<img src="{{ .Site.Params.cloudinary_url }}w_480,dpr_auto,c_scale,f_auto,q_auto{{ .Get "src" }}" 
+			 srcset="{{ .Site.Params.cloudinary_url }}w_480,dpr_auto,c_scale,f_auto,q_auto{{ .Get "src" }} 480w, 
+					 {{ .Site.Params.cloudinary_url }}w_640,dpr_auto,c_scale,f_auto,q_auto{{ .Get "src" }} 640w, 
+					 {{ .Site.Params.cloudinary_url }}w_960,dpr_auto,c_scale,f_auto,q_auto{{ .Get "src" }} 960w, 
+					 {{ .Site.Params.cloudinary_url }}w_1280,dpr_auto,c_scale,f_auto,q_auto{{ .Get "src" }} 1280w" 
+			 sizes="(min-width: 1200px) 640px, (min-width: 768px) 480px, calc(100vw - 74px)" 
+			 loading="lazy"
+		     {{ if .Get "alt" }}alt="{{ .Get "alt" }}"{{ end }} />
+		{{ if .Get "caption" }}
+			<p class="caption">{{ .Get "caption" }}</p>
+		{{ end }}
+	</div>
+</div>

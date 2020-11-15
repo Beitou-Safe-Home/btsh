@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://www.btsh.org.tw/sitemap.xml
